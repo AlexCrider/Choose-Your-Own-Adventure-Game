@@ -152,13 +152,29 @@ while keepPlaying.lower() == "yes":
         print("\nYou muster up what little energy you have left to try and cast a spell. ")
         print("Since you had been wandering for hours, you have not had time to take a rest. All of your spell slots have been expended. ")
         print("Instead of a spell, you decide to use the cantrip, Produce Flame. ")
-        print(f"\nYou use all of your concentration and will to channel the flickering flame between your palms and rest them gently on {woodElfName}'s wound. ")
-        print("You're able to completely heal her wound, making it to where she is able to stand. ")
+        print(f"You use all of your concentration and will to channel the flickering flame between your palms and rest them gently on {woodElfName}'s wound. ")
+        print("\nYou're able to completely heal her wound, making it to where she is able to stand. ")
+    
+    if burnForestChoice == "yes" and helpWoodElf == "no":
+        print(f"\nEven though she saved your life, you decide to leave {woodElfName} alone to die. ")
+
+    if burnForestChoice == "no" and helpWoodElf == "no":
+        print(f"\nEven though she is in desperate need of help, you decide to leave {woodElfName} alone to die. ")
+
+    if burnForestChoice == "yes" and helpWoodElf == "yes" or burnForestChoice == "no" and helpWoodElf == "yes":
         print("You both wrap your arm around the other's shoulder and begin to make your way out of the forest. ")
-        print(f"'Since you saved my life, I will help you find your way out of the enchanted forest', says {woodElfName} ")
+        print(f"'Since you saved my life, I will help you find your way out of the enchanted forest', says {woodElfName}. ")
         print("'As a wood elf, I've lived here all my life and know these woods better than anyone else.' ")
-    else:
-        print()
+        print(f"\n\n{fireElfName} and {woodElfName} venture back to the castle together. ")
+        print("Both elves decide to live out the rest of their days as friends, causing a ripple effect throughout all of Autumnspire. ")
+        print("The fire elves and wood elves live forever in perfect harmony. ")
+
+    if burnForestChoice == "yes" and helpWoodElf == "no" or burnForestChoice == "no" and helpWoodElf == "no":
+        print(f"She was furious that you didn't help her! ")
+        print(f"\nWith every ounce of strength {woodElfName} had left, she cast Minor Illusion on the entire enchanted forest. ")
+        print("Right before your eyes, you watched every tree change to look exactly the same and any bit of light that was left immediately vanished. ")
+        print(f"\n{fireElfName} wandered the woods for hours before she succumed to her dilusions. ")
+        print("\n\nYou never make it back to the castle... ")        
 
 
 
@@ -167,4 +183,9 @@ while keepPlaying.lower() == "yes":
 
 
 
-    keepPlaying = input("\n\nDo you want to play again? Yes or no: ")
+
+    keepPlaying = input("\n\nDo you want to play again? Yes or no: \n")
+    #if len(keepPlaying) == 0:
+        #print("Please choose yes or no: \n")
+    #if keepPlaying.lower() not in ["yes" , "no"]:
+        #print("Invalid choice. Please choose yes or no: \n")
