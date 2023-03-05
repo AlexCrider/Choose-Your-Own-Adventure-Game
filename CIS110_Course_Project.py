@@ -179,11 +179,6 @@ while keepPlaying.lower() == "yes":
 
 
 
-
-
-
-
-
     keepPlaying = input("\n\nDo you want to play again? Yes or no: \n")
     if len(keepPlaying) == 0:
         print("Please choose yes or no: \n")
