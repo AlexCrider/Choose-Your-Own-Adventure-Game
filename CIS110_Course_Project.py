@@ -81,9 +81,9 @@ while keepPlaying.lower() == "yes":
 
     #Decision 1
      
-    burnForestChoice = input (f"\nChoose wisely: ")
-    while burnForestChoice == 0:
-            burnForestChoice = input ("Please make a choice. ")
+    burnForestChoice = input ("\nChoose wisely: \n")
+    while len(burnForestChoice) == 0:
+            burnForestChoice = input ("Please choose yes or no: \n")
     while burnForestChoice.lower() not in ["yes" , "no" ]:
             burnForestChoice = input ("Invalid choice. Please choose yes or no: \n")
 
@@ -99,7 +99,7 @@ while keepPlaying.lower() == "yes":
 
 
     if burnForestChoice == "yes":
-        print(f"\nAll of a sudden {fireElfName} was abruptly, and painfully, snatched up by the trees of the enchanted forest that lay behind her.")
+        print(f"\nSuddenly {fireElfName} was abruptly, and painfully, snatched up by the trees of the enchanted forest that lay behind her.")
         print("Her hands and feet were bound, leaving her helpless. Her only choice was to scream for help. ")
     else:
         print(f"\nAfter what felt like hours of walking in circles, {fireElfName} decided to sit and take a break. ")
@@ -124,11 +124,39 @@ while keepPlaying.lower() == "yes":
         print(f"When she was finally close enough, {fireElfName} saw that the elf had been injured and was badly bleeding. ")
         print("\nHowever... she also noticed that the elf is a wood elf. ")
 
-        print("\nWood elves were not royalty and should be treated as though they matter much less than fire elves. ")
+    print("Wood elves were not royalty and should be treated as though they matter much less than fire elves. ")
+
+    if burnForestChoice == "yes":
+        print(f"\nEven though wood elves are not royalty, {fireElfName} decided she still wanted to know the name of the elf that saved her life. ")
+    else:
+        print(f"\nEven though wood elves are not royalty, {fireElfName} decided she still wanted to know the name of the elf asking her for help. ")
+
+    print(f"'What is your name?', asked {fireElfName}. ")
+    print(f"'{woodElfName}', she replied. ")
+    print(f"{fireElfName} had two choices; she could either help the wood elf or leave her there to suffer on her own... ")
+    print(f"\nDo you use your fire magic to help {woodElfName}? ")
+    print("(Keep in mind the alignment you chose.) ")
+    print("\nYes. Cauterize the wound. ")
+    print("No. Wood elves do not deserve help from fire elves.")
+    
+
+    #Decision 2
+
+    helpWoodElf = input ("\nChoose wisely: \n")
+    while len(helpWoodElf) == 0:
+        print("Please choose yes or no: \n")
+    while helpWoodElf.lower() not in ["yes" , "no" ]:
+        helpWoodElf = input ("Invalid choice. Please choose yes or no: \n")
+
+    if helpWoodElf == "yes":
+        print("You muster up what little energy you have left to try and cast a spell. ")
+        print("Since you had been wandering for hours, you have not had time to take a rest. All of your spell slots have been expended. ")
+        print("Instead of a spell, you decide to use the cantrip, Produce Flame. ")
 
 
 
 
 
 
-keepGoing = input("Do you want to play again? Yes or no: ")
+
+    keepPlaying = input("\n\nDo you want to play again? Yes or no: ")
