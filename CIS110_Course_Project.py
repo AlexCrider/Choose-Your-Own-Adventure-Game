@@ -83,9 +83,9 @@ while keepPlaying.lower() == "yes":
      
     burnForestChoice = input ("\nChoose wisely: \n")
     while len(burnForestChoice) == 0:
-            burnForestChoice = input ("Please choose yes or no: \n")
+        burnForestChoice = input ("Please choose yes or no: \n")
     while burnForestChoice.lower() not in ["yes" , "no" ]:
-            burnForestChoice = input ("Invalid choice. Please choose yes or no: \n")
+        burnForestChoice = input ("Invalid choice. Please choose yes or no: \n")
 
     if burnForestChoice == "yes":
         print(f"\n{fireElfName} realized she was doubting her royalty and abilities. Self doubt was for the weak! ")
@@ -144,7 +144,7 @@ while keepPlaying.lower() == "yes":
 
     helpWoodElf = input ("\nChoose wisely: \n")
     while len(helpWoodElf) == 0:
-        print("Please choose yes or no: \n")
+        helpWoodElf = input ("Please choose yes or no: \n")
     while helpWoodElf.lower() not in ["yes" , "no" ]:
         helpWoodElf = input ("Invalid choice. Please choose yes or no: \n")
 
@@ -185,7 +185,7 @@ while keepPlaying.lower() == "yes":
 
 
     keepPlaying = input("\n\nDo you want to play again? Yes or no: \n")
-    #if len(keepPlaying) == 0:
-        #print("Please choose yes or no: \n")
-    #if keepPlaying.lower() not in ["yes" , "no"]:
-        #print("Invalid choice. Please choose yes or no: \n")
+    if len(keepPlaying) == 0:
+        print("Please choose yes or no: \n")
+    if keepPlaying.lower() not in ["yes" , "no"]:
+        print("Invalid choice. Please choose yes or no: \n")
