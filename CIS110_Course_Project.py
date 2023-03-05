@@ -149,9 +149,17 @@ while keepPlaying.lower() == "yes":
         helpWoodElf = input ("Invalid choice. Please choose yes or no: \n")
 
     if helpWoodElf == "yes":
-        print("You muster up what little energy you have left to try and cast a spell. ")
+        print("\nYou muster up what little energy you have left to try and cast a spell. ")
         print("Since you had been wandering for hours, you have not had time to take a rest. All of your spell slots have been expended. ")
         print("Instead of a spell, you decide to use the cantrip, Produce Flame. ")
+        print(f"\nYou use all of your concentration and will to channel the flickering flame between your palms and rest them gently on {woodElfName}'s wound. ")
+        print("You're able to completely heal her wound, making it to where she is able to stand. ")
+        print("You both wrap your arm around the other's shoulder and begin to make your way out of the forest. ")
+        print(f"'Since you saved my life, I will help you find your way out of the enchanted forest', says {woodElfName} ")
+        print("'As a wood elf, I've lived here all my life and know these woods better than anyone else.' ")
+    else:
+        print()
+
 
 
 
