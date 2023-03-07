@@ -10,7 +10,7 @@ while keepPlaying.lower() == "yes":
 
     #Story questions
 
-    alignment = ['lawful good', 'neutral good', 'chaotic good', 'lawful neutral', 'neutral chaotic', 'neutral', 'lawful evil', 'neutral evil', 'chaotic evil']
+    alignment = ['lawful good', 'neutral good', 'chaotic good', 'lawful neutral', 'choatic neutral', 'neutral', 'lawful evil', 'neutral evil', 'chaotic evil']
 
     #Question 1
     fireElfName = input(f"\nChoose a name for a royal female Fire Elf: \n")
